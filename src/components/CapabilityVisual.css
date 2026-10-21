@@ -1,0 +1,4 @@
+.capability-visual{display:block;width:100%;max-width:270px;height:155px;margin:30px auto 12px;color:#c5d69b;overflow:visible}
+.capability-visual .visual-wire{stroke:#81935f;stroke-dasharray:3 4}
+.strength-card:hover .capability-visual{color:#e0edbc}
+@media(max-width:700px){.capability-visual{height:145px;max-width:245px;margin-top:24px}}

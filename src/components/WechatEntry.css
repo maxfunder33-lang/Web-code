@@ -1,0 +1,30 @@
+.wechat-popover{position:fixed;z-index:16;width:280px;max-width:calc(100vw - 32px);padding:18px;background:#fafbf6;border:1px solid #a7b494;border-radius:14px;box-shadow:0 18px 60px #0005;color:#25311d;animation:wechatAppear .2s ease-out}
+.wechat-popover-title{font-size:13px;font-weight:600;margin:0 0 12px}
+.wechat-qr-window{position:relative;overflow:hidden;width:100%;aspect-ratio:1;background:white;border-radius:5px}
+.wechat-qr-window img{position:absolute;width:138.84%;height:auto;max-width:none;left:-19.42%;top:-59.85%;display:block}
+.wechat-popover-hint{font-size:11px;color:#657451;text-align:center;margin:12px 0 0}
+.about-links .wechat-entry{color:inherit}
+.contact-links .wechat-entry{font-size:22px;line-height:1.4;color:#25351c;padding:0 0 8px}
+@keyframes wechatAppear{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.more-about{padding-top:90px;padding-bottom:45px}
+.more-about .section-heading{margin-bottom:35px}
+.more-about-intro{display:flex;justify-content:space-between;gap:35px;align-items:center;padding:35px;border:1px solid #414936;background:linear-gradient(135deg,#20271a,#171c14);border-radius:5px}
+.more-about-intro p{font-size:16px;color:#bac5ab;max-width:650px}
+.more-about-tag{font-size:13px;color:#d4e49a;border:1px solid #63734e;padding:10px 15px;border-radius:22px;white-space:nowrap}
+.more-about-footer{margin-top:65px;padding-top:22px;border-top:1px solid #30392a;color:#9ba58c;font-size:11px}
+.life-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.life-card{overflow:hidden;border:1px solid #3c4431;background:#1a1e16;border-radius:5px}
+.life-art{position:relative;height:210px;overflow:hidden;background:linear-gradient(140deg,#2b3421,#171e17);border-bottom:1px solid #3c4431}
+.life-copy{padding:27px}.life-copy h3{font-size:25px;margin:12px 0}.life-copy p{color:#aab59c;font-size:14px;line-height:1.9}.life-copy .eyebrow{font-size:10px;color:#b7c393}
+.photo-art{display:flex;justify-content:center;align-items:center;gap:14px;background:radial-gradient(ellipse at 70% 20%,#60704a55,transparent 65%),#1c241a}
+.photo-art span,.photo-art i{display:block;width:115px;height:145px;border:1px solid #b7ca8c88;background:linear-gradient(153deg,transparent 46%,#60744c 47%,#34452c 65%,#1a271c 66%),linear-gradient(#99ad7433,#44543b);transform:rotate(-10deg);box-shadow:0 10px 25px #0004}
+.photo-art i{transform:rotate(9deg) translateY(12px);background:linear-gradient(32deg,#293d2b 35%,transparent 36%),linear-gradient(145deg,transparent 53%,#61764b 54%,#35492e 70%),#7d966b44}
+.photo-art b{position:absolute;left:calc(50% - 91px);top:48px;width:22px;height:22px;border-radius:50%;background:#d4e49a66}
+.trail-art svg{height:100%;width:100%;padding:20px 15px 0;fill:none;stroke:#c6d99b;stroke-width:1.2;opacity:.8}.trail-art circle{fill:#c6d99b18}.trail-art .trail-path{stroke-dasharray:3 5;stroke-width:1.5}
+.record{position:absolute;width:144px;height:144px;border-radius:50%;left:calc(50% - 86px);top:32px;background:repeating-radial-gradient(circle,#1c281d 0 5px,#65764655 6px,#1c281d 7px 11px);border:1px solid #9eb47b;transform:rotate(-18deg)}
+.record i{position:absolute;inset:48px;border:1px solid #a6bc7b;border-radius:50%;background:#a6bc7b66}.record i:after{content:'';position:absolute;inset:19px;border-radius:50%;background:#192317}
+.dice{position:absolute;left:calc(50% + 28px);top:105px;width:64px;height:64px;transform:rotate(13deg);border:1px solid #c0d295;border-radius:12px;background:#52613b;box-shadow:0 10px 20px #0004}.dice i{position:absolute;width:7px;height:7px;border-radius:50%;background:#d4e49a;left:28px;top:28px}.dice i:first-child{left:12px;top:12px}.dice i:last-child{left:44px;top:44px}
+@media(max-width:1000px){.life-grid{grid-template-columns:repeat(3,1fr);gap:15px}.life-copy{padding:22px}.life-art{height:180px}.photo-art{gap:5px}.photo-art span,.photo-art i{width:85px;height:115px}}
+@media(max-width:700px){.life-grid{grid-template-columns:1fr}.life-art{height:200px}.life-copy{padding:25px}.more-about .section-heading h2{font-size:clamp(32px,8vw,48px)}.photo-art span,.photo-art i{width:115px;height:145px}}
+@media(max-width:700px){.more-about{padding-top:65px;padding-bottom:30px}.more-about-intro{padding:24px;flex-direction:column;align-items:flex-start;gap:22px}.more-about-intro p{font-size:14px}.more-about-footer{margin-top:40px}}
+@media(prefers-reduced-motion:reduce){.wechat-popover{animation:none}}

@@ -1,0 +1,25 @@
+import React,{useState,useEffect} from 'react';
+import {caseStudies} from '../case-studies';
+import './CaseStudy.css';
+import QuantifiedText from './QuantifiedText';
+
+export default function CaseStudy({project,onClose,closeRef,onSelect,projects,highlightNumbers=false}){
+ const [selected,setSelected]=useState(0);
+ useEffect(()=>{closeRef.current?.focus();},[closeRef]);
+ const c=project.caseStudy||caseStudies[project.id];
+ const display=c.presentation||{};
+ const sectionId=name=>`case-${project.id}-${name}`;
+ const jump=name=>document.getElementById(sectionId(name))?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+ return <>
+  <div className="case-topbar"><span>CASE STUDY / {project.number||project.id}</span><button className="modal-close" ref={closeRef} onClick={onClose} aria-label="关闭案例">返回作品集 ×</button></div>
+  <div className={'case-intro'+(display.fullWidthSummary?' case-intro-wide':'')}><p className="eyebrow">{project.category}</p><h2 id="case-title">{project.title}</h2><p className="case-deck"><QuantifiedText enabled={highlightNumbers}>{c.summary}</QuantifiedText></p><div className="case-tags">{project.tags.map(t=><span key={t}>{t}</span>)}</div></div>
+  <dl className="case-facts">{c.scope.map(([a,b])=><div key={a}><dt>{a}</dt><dd><QuantifiedText enabled={highlightNumbers}>{b}</QuantifiedText></dd></div>)}</dl>
+  {!display.hideNavigation&&<nav className="case-nav" aria-label="案例章节">{[['context','业务与职责'],['visual','方案拆解'],['strategy','策略设计'],...(!display.hideProcess?[['process','推进过程']]:[]),['results','成果与口径']].map(([id,label],i)=><button key={id} onClick={()=>jump(id)}><small>0{i+1}</small>{label}</button>)}</nav>}
+  <section className="case-section" id={sectionId('context')}><div className="case-section-label"><small>01 / CONTEXT</small><h3>业务与职责</h3></div><div className="case-context"><div><h4>业务背景</h4><p><QuantifiedText enabled={highlightNumbers}>{c.context}</QuantifiedText></p></div><div><h4>我的职责</h4><p><QuantifiedText enabled={highlightNumbers}>{c.ownership}</QuantifiedText></p></div></div></section>
+  <section className="case-section" id={sectionId('visual')}><div className="case-section-label"><small>02 / VISUAL BREAKDOWN</small><h3>让图像说明业务</h3><p>点击编号，查看对应环节。</p></div><div className="case-visual"><figure><img src={'/assets/'+(project.caseImage||project.image)} alt={project.title+'方案示意，包含虚拟展示元素'}/>{c.annotations.map((a,i)=><button key={a.title} className={'case-pin '+(selected===i?'selected':'')} style={{left:a.x+'%',top:a.y+'%'}} aria-label={'查看图解：'+a.title} aria-pressed={selected===i} onClick={()=>setSelected(i)}>{i+1}</button>)}</figure><div className="case-annotation-list" aria-label="插图说明">{c.annotations.map((a,i)=><button key={a.title} className={selected===i?'selected':''} aria-pressed={selected===i} onClick={()=>setSelected(i)}><span>0{i+1}</span><div><strong>{a.title}</strong><p>{a.text}</p>{a.methods&&<span className="case-methods">{a.methods.map(method=><strong key={method}>{method}</strong>)}</span>}</div></button>)}</div>{!display.hideVisualNote&&<p className="case-visual-note">方案示意 · 非真实产品截图。{c.visualNote}</p>}</div></section>
+  <section className="case-section" id={sectionId('strategy')}><div className="case-section-label"><small>03 / STRATEGY</small><h3>策略如何展开</h3></div><div className="case-context">{c.strategy.map(([a,b])=><div key={a}><h4>{a}</h4><p><QuantifiedText enabled={highlightNumbers}>{b}</QuantifiedText></p></div>)}</div></section>
+  {!display.hideProcess&&<section className="case-section" id={sectionId('process')}><div className="case-section-label"><small>04 / DELIVERY</small><h3>如何推进落地</h3></div><ol className="case-process">{c.steps.map(([a,b],i)=><li key={a}><span>0{i+1}</span><h4>{a}</h4><p><QuantifiedText enabled={highlightNumbers}>{b}</QuantifiedText></p></li>)}</ol></section>}
+  <section className="case-section" id={sectionId('results')}><div className="case-section-label"><small>{display.hideProcess?'04':'05'} / OUTCOMES</small><h3>项目成果</h3></div><div className="case-results"><div className="case-outcome-grid">{c.outcomes.map(o=><article key={o.label}><strong>{o.value}</strong><h4>{o.label}</h4><p><QuantifiedText enabled={highlightNumbers}>{o.note}</QuantifiedText></p></article>)}</div>{!display.hideCriteria&&<div className="case-criteria"><h4>统计口径与贡献边界</h4>{c.criteria.map(([a,b])=><div key={a}><span>{a}</span><p><QuantifiedText enabled={highlightNumbers}>{b}</QuantifiedText></p></div>)}</div>}{!display.hideTakeaway&&<div className="case-takeaway"><small>WHAT THIS CASE SHOWS</small><p><QuantifiedText enabled={highlightNumbers}>{c.takeaway}</QuantifiedText></p></div>}</div></section>
+  {!display.hideBottom&&<div className="case-bottom"><a href="mailto:496101216@qq.com">交流项目过程与个人贡献 ↗</a><div className="case-next"><span>继续浏览</span>{projects.filter(p=>p.id!==project.id).map(p=><button key={p.id} onClick={()=>onSelect(p)}>{p.number||p.id} / {p.title} ↗</button>)}</div><small>内容依据个人简历整理，具体统计范围以项目说明为准。</small></div>}
+ </>;
+}

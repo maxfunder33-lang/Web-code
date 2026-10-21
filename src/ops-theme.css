@@ -1,0 +1,57 @@
+/* Sage surfaces echo the contact section; artwork retains its original palette. */
+html[data-profile="ops"]{
+ background:#e1e6d6;color:#243021;
+ --muted:#5d6b53;--line:#b4bfa5;--accent:#52673c;
+}
+html[data-profile="ops"] body{background:linear-gradient(180deg,#e1e6d6,#e9ecdf 60%,#d8e0c9)}
+html[data-profile="ops"] .hero{
+ color:#eef2e8;--muted:#b2bea3;--line:#566348;--accent:#d4e49a;
+}
+html[data-profile="ops"] .hero-shade{background:linear-gradient(90deg,#172015aa,#17201528 70%,#17201518),linear-gradient(0deg,#252f21,transparent 23%)}
+html[data-profile="ops"] .nav{background:#1c281d38;border-bottom-color:#cfdfb52b}
+html[data-profile="ops"] .nav .brand-name{color:#eef2e8}
+html[data-profile="ops"] .nav-contact,html[data-profile="ops"] .menu-toggle{color:#eef2e8}
+html[data-profile="ops"] .nav-contact:hover{color:#172015}
+html[data-profile="ops"] .about{padding-top:105px}
+html[data-profile="ops"] .about .lead{color:#2c3925}
+html[data-profile="ops"] .about .job-detail b,
+html[data-profile="ops"] .about .education>strong{color:#2e4025}
+html[data-profile="ops"] .facts{color:#526147}
+html[data-profile="ops"] .about-links button{color:#34492b;border-color:#81946e}
+html[data-profile="ops"] .metrics strong{color:#354b29}
+html[data-profile="ops"] .metrics .metric-unit{color:#5c6f4d}
+html[data-profile="ops"] .metrics .metric-note{color:#65775a}
+html[data-profile="ops"] .experience-method strong{color:#33482a}
+html[data-profile="ops"] .experience-method li>span{color:#536e3e}
+html[data-profile="ops"] .about strong.result-emphasis{color:#3e5d2b;text-decoration-color:#6c865c66}
+html[data-profile="ops"] .about .education-honors strong{color:#405a30!important;background:#d0dac0;border-color:#94a781}
+html[data-profile="ops"] .education-detail p{color:#526348}
+html[data-profile="ops"] .lanyard{background:radial-gradient(ellipse at 50% 55%,#b1c39a,#d0d9c2 75%);border-color:#9eaf8e}
+html[data-profile="ops"] .lanyard-controls,
+html[data-profile="ops"] .lanyard-controls button{color:#4e683a}
+html[data-profile="ops"] .project{
+ color:#eef2e7;--muted:#bbc5af;--line:#526047;--accent:#d4e49a;
+ background:linear-gradient(145deg,#303b28,#252e20 75%);border-color:#7d8d6c;
+ box-shadow:0 8px 26px #4253370c;
+}
+html[data-profile="ops"] .project .project-image{border-color:#526047}
+html[data-profile="ops"] .project-story>p{color:#c2cdb7}
+html[data-profile="ops"] .project-evidence{border-color:#5b6a4e}
+html[data-profile="ops"] .project-evidence dd{color:#bac9aa}
+html[data-profile="ops"] .project .project-caption{border-color:#5b6a4e}
+html[data-profile="ops"] .strength-card{background:#d2dcc2;border-color:#a8b797;box-shadow:0 5px 20px #4b603508}
+html[data-profile="ops"] .strength-card:hover{background:#c7d4b5}
+html[data-profile="ops"] .strength-card p,
+html[data-profile="ops"] .strength-card small{color:#536747}
+html[data-profile="ops"] .strength-card small{border-color:#a4b68f}
+html[data-profile="ops"] .strength-top{color:#526348}
+html[data-profile="ops"] .section-heading>p{color:#586b4b}
+html[data-profile="ops"] .strength-card strong.result-emphasis{color:#365126;text-decoration-color:#6c865c66}
+html[data-profile="ops"] .strength-card .abstract i{border-color:#6e8752}
+html[data-profile="ops"] .working-notes p{color:#586c4b}
+html[data-profile="ops"] .modal{color:#e9eee1;--muted:#acba9c;--line:#46543a;--accent:#d4e49a}
+html[data-profile="ops"] .contact{background:#cbd5b4}
+@media(max-width:700px){
+ html[data-profile="ops"] .about{padding-top:75px}
+ html[data-profile="ops"] .hero-shade{background:linear-gradient(90deg,#172015b8,#17201548),linear-gradient(0deg,#252f21,transparent 30%)}
+}

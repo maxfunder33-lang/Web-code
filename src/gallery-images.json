@@ -1,0 +1,203 @@
+{
+  "food": [
+    {
+      "src": "/assets/gallery/personal/food-01-c4b5ebff05-tile.webp",
+      "full": "/assets/gallery/personal/food-01-c4b5ebff05.webp",
+      "alt": "美食和生活 · 01"
+    },
+    {
+      "src": "/assets/gallery/personal/food-02-d28984f2e1-tile.webp",
+      "full": "/assets/gallery/personal/food-02-d28984f2e1.webp",
+      "alt": "美食和生活 · 02"
+    },
+    {
+      "src": "/assets/gallery/personal/food-03-0a6454b8b7-tile.webp",
+      "full": "/assets/gallery/personal/food-03-0a6454b8b7.webp",
+      "alt": "美食和生活 · 03"
+    },
+    {
+      "src": "/assets/gallery/personal/food-04-92d00b25b2-tile.webp",
+      "full": "/assets/gallery/personal/food-04-92d00b25b2.webp",
+      "alt": "美食和生活 · 04"
+    },
+    {
+      "src": "/assets/gallery/personal/food-05-e3686b7a52-tile.webp",
+      "full": "/assets/gallery/personal/food-05-e3686b7a52.webp",
+      "alt": "美食和生活 · 05"
+    },
+    {
+      "src": "/assets/gallery/personal/food-06-80de315f35-tile.webp",
+      "full": "/assets/gallery/personal/food-06-80de315f35.webp",
+      "alt": "美食和生活 · 06"
+    },
+    {
+      "src": "/assets/gallery/personal/food-07-69240f055b-tile.webp",
+      "full": "/assets/gallery/personal/food-07-69240f055b.webp",
+      "alt": "美食和生活 · 07"
+    },
+    {
+      "src": "/assets/gallery/personal/food-08-7121623cd0-tile.webp",
+      "full": "/assets/gallery/personal/food-08-7121623cd0.webp",
+      "alt": "美食和生活 · 08"
+    },
+    {
+      "src": "/assets/gallery/personal/food-09-c2b0405db4-tile.webp",
+      "full": "/assets/gallery/personal/food-09-c2b0405db4.webp",
+      "alt": "美食和生活 · 09"
+    },
+    {
+      "src": "/assets/gallery/personal/food-10-dcdf364059-tile.webp",
+      "full": "/assets/gallery/personal/food-10-dcdf364059.webp",
+      "alt": "美食和生活 · 10"
+    },
+    {
+      "src": "/assets/gallery/personal/food-11-cd829172d2-tile.webp",
+      "full": "/assets/gallery/personal/food-11-cd829172d2.webp",
+      "alt": "美食和生活 · 11"
+    },
+    {
+      "src": "/assets/gallery/personal/food-12-78f5b8b265-tile.webp",
+      "full": "/assets/gallery/personal/food-12-78f5b8b265.webp",
+      "alt": "美食和生活 · 12"
+    }
+  ],
+  "outdoors": [
+    {
+      "src": "/assets/gallery/personal/outdoors-01-712068bb07-tile.webp",
+      "full": "/assets/gallery/personal/outdoors-01-712068bb07.webp",
+      "alt": "徒步与旅行 · 01"
+    },
+    {
+      "src": "/assets/gallery/personal/outdoors-02-28dd644fb2-tile.webp",
+      "full": "/assets/gallery/personal/outdoors-02-28dd644fb2.webp",
+      "alt": "徒步与旅行 · 02"
+    },
+    {
+      "src": "/assets/gallery/personal/outdoors-03-a404265398-tile.webp",
+      "full": "/assets/gallery/personal/outdoors-03-a404265398.webp",
+      "alt": "徒步与旅行 · 03"
+    },
+    {
+      "src": "/assets/gallery/personal/outdoors-04-5825504eb9-tile.webp",
+      "full": "/assets/gallery/personal/outdoors-04-5825504eb9.webp",
+      "alt": "徒步与旅行 · 04"
+    },
+    {
+      "src": "/assets/gallery/personal/outdoors-05-503e71515b-tile.webp",
+      "full": "/assets/gallery/personal/outdoors-05-503e71515b.webp",
+      "alt": "徒步与旅行 · 05"
+    },
+    {
+      "src": "/assets/gallery/personal/outdoors-06-bdc75dcd21-tile.webp",
+      "full": "/assets/gallery/personal/outdoors-06-bdc75dcd21.webp",
+      "alt": "徒步与旅行 · 06"
+    },
+    {
+      "src": "/assets/gallery/personal/outdoors-07-608ba01bd5-tile.webp",
+      "full": "/assets/gallery/personal/outdoors-07-608ba01bd5.webp",
+      "alt": "徒步与旅行 · 07"
+    },
+    {
+      "src": "/assets/gallery/personal/outdoors-08-a4c74f0dfc-tile.webp",
+      "full": "/assets/gallery/personal/outdoors-08-a4c74f0dfc.webp",
+      "alt": "徒步与旅行 · 08"
+    },
+    {
+      "src": "/assets/gallery/personal/outdoors-09-1a171cd8fd-tile.webp",
+      "full": "/assets/gallery/personal/outdoors-09-1a171cd8fd.webp",
+      "alt": "徒步与旅行 · 09"
+    },
+    {
+      "src": "/assets/gallery/personal/outdoors-10-0a5fe982fe-tile.webp",
+      "full": "/assets/gallery/personal/outdoors-10-0a5fe982fe.webp",
+      "alt": "徒步与旅行 · 10"
+    },
+    {
+      "src": "/assets/gallery/personal/outdoors-11-7d48806ee1-tile.webp",
+      "full": "/assets/gallery/personal/outdoors-11-7d48806ee1.webp",
+      "alt": "徒步与旅行 · 11"
+    },
+    {
+      "src": "/assets/gallery/personal/outdoors-12-4381b5acf0-tile.webp",
+      "full": "/assets/gallery/personal/outdoors-12-4381b5acf0.webp",
+      "alt": "徒步与旅行 · 12"
+    }
+  ],
+  "play": [
+    {
+      "src": "/assets/gallery/personal/play-01-119b63d708-tile.webp",
+      "full": "/assets/gallery/personal/play-01-119b63d708.webp",
+      "alt": "游戏与音乐 · 01"
+    },
+    {
+      "src": "/assets/gallery/personal/play-02-1bd2372032-tile.webp",
+      "full": "/assets/gallery/personal/play-02-1bd2372032.webp",
+      "alt": "游戏与音乐 · 02"
+    },
+    {
+      "src": "/assets/gallery/personal/play-03-04e37e80fb-tile.webp",
+      "full": "/assets/gallery/personal/play-03-04e37e80fb.webp",
+      "alt": "游戏与音乐 · 03"
+    },
+    {
+      "src": "/assets/gallery/personal/play-04-320f8e6311-tile.webp",
+      "full": "/assets/gallery/personal/play-04-320f8e6311.webp",
+      "alt": "游戏与音乐 · 04"
+    },
+    {
+      "src": "/assets/gallery/personal/play-05-2f4b1b740d-tile.webp",
+      "full": "/assets/gallery/personal/play-05-2f4b1b740d.webp",
+      "alt": "游戏与音乐 · 05"
+    },
+    {
+      "src": "/assets/gallery/personal/play-06-0db830a19a-tile.webp",
+      "full": "/assets/gallery/personal/play-06-0db830a19a.webp",
+      "alt": "游戏与音乐 · 06"
+    },
+    {
+      "src": "/assets/gallery/personal/play-07-a0c92aa030-tile.webp",
+      "full": "/assets/gallery/personal/play-07-a0c92aa030.webp",
+      "alt": "游戏与音乐 · 07"
+    },
+    {
+      "src": "/assets/gallery/personal/play-08-964d4f7b51-tile.webp",
+      "full": "/assets/gallery/personal/play-08-964d4f7b51.webp",
+      "alt": "游戏与音乐 · 08"
+    },
+    {
+      "src": "/assets/gallery/personal/play-09-156b923651-tile.webp",
+      "full": "/assets/gallery/personal/play-09-156b923651.webp",
+      "alt": "游戏与音乐 · 09"
+    },
+    {
+      "src": "/assets/gallery/personal/play-10-e1cdc501a0-tile.webp",
+      "full": "/assets/gallery/personal/play-10-e1cdc501a0.webp",
+      "alt": "游戏与音乐 · 10"
+    },
+    {
+      "src": "/assets/gallery/personal/play-11-c79bf6c1c6-tile.webp",
+      "full": "/assets/gallery/personal/play-11-c79bf6c1c6.webp",
+      "alt": "游戏与音乐 · 11"
+    },
+    {
+      "src": "/assets/gallery/personal/play-12-f8d6473f73-tile.webp",
+      "full": "/assets/gallery/personal/play-12-f8d6473f73.webp",
+      "alt": "游戏与音乐 · 12"
+    },
+    {
+      "src": "/assets/gallery/personal/play-13-64a19e497c-tile.webp",
+      "full": "/assets/gallery/personal/play-13-64a19e497c.webp",
+      "alt": "游戏与音乐 · 13"
+    },
+    {
+      "src": "/assets/gallery/personal/play-14-58be082d72-tile.webp",
+      "full": "/assets/gallery/personal/play-14-58be082d72.webp",
+      "alt": "游戏与音乐 · 14"
+    },
+    {
+      "src": "/assets/gallery/personal/play-15-fde7fb720c-tile.webp",
+      "full": "/assets/gallery/personal/play-15-fde7fb720c.webp",
+      "alt": "游戏与音乐 · 15"
+    }
+  ]
+}

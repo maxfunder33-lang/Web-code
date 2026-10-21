@@ -1,0 +1,12 @@
+node_modules/
+.pnpm-store/
+dist/
+dist-ops/
+dist-pm/
+qa/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
