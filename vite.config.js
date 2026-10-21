@@ -11,7 +11,7 @@ export default defineConfig(({mode})=>{
  const target=metadata[mode];
  return {
   plugins:[{name:'profile-metadata',transformIndexHtml(html,context){
-   const page=target||metadata[context.path.split('/').filter(Boolean)[0]];
+   const page=target||metadata[context.path.split('/').filter(Boolean)[0]||'ops'];
    if(!page)return html;
    return html.replace(/<title>.*?<\/title>/,`<title>岳子豪 — ${page.role}</title>`)
     .replace(/<meta name="description" content="[^"]*"\/>/,`<meta name="description" content="${page.description}"/>`);

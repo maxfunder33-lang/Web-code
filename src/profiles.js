@@ -148,7 +148,7 @@ const pm={
 
 export function getProfile(){
  const mode=import.meta.env.MODE;
- const key=['ops','pm'].includes(mode)?mode:window.location.pathname.split('/').filter(Boolean)[0];
+ const key=['ops','pm'].includes(mode)?mode:(window.location.pathname.split('/').filter(Boolean)[0]||'ops');
  const variant={ops,pm}[key];
  if(!variant)return legacy;
  const profile={...legacy,...variant};
