@@ -144,3 +144,24 @@ html:is([data-profile="ops"],[data-profile="pm"]) .gallery-cover>span{position:a
 
 /* The product-led edition opens with the complete product-page illustration. */
 html[data-profile="pm"] .project:first-child .project-image{aspect-ratio:1586/992}
+
+/* MoltenMetal preview: calm dark fallback, readable copy, continuous footer fade. */
+.hero-slats.hero-molten{opacity:.8;background:radial-gradient(ellipse at 80% 30%,#294a40 0%,#172a23 30%,#11120f 75%)}
+
+/* A shared chronological rail, including education, follows expanding entries. */
+.has-timeline .job-list{padding-left:100px}
+.journey-entry{position:relative}
+.journey-entry::before{content:"";position:absolute;left:-59px;top:29px;width:9px;height:9px;border:1px solid #95a57a;border-radius:50%;background:#11120f;z-index:1}
+.journey-entry:not(:last-child)::after{content:"";position:absolute;left:-55px;top:34px;bottom:-34px;width:1px;background:linear-gradient(#7d8e5f80,#69784d45);pointer-events:none}
+.journey-entry:first-child::before{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 5px #d4e49a10}
+.journey-year{position:absolute;left:-100px;top:27px;font-size:11px;line-height:14px;letter-spacing:.05em;color:#aab398;font-variant-numeric:tabular-nums}
+.journey-entry:first-child .journey-year{color:var(--accent)}
+.about-links .resume-download,.contact-links .resume-download{display:inline-flex;align-items:center;gap:9px;white-space:nowrap;line-height:1.9}
+.about-links .resume-download{color:inherit;font-size:12px;padding-bottom:7px;border-bottom:1px solid #60674e}
+.resume-download svg{flex-shrink:0;transition:transform .2s}
+.resume-download:hover svg{transform:translateY(3px)}
+.contact-links{gap:clamp(24px,4vw,70px);flex-wrap:wrap}
+.contact-links .resume-download-contact{font-size:18px;letter-spacing:0;padding:0 0 8px;border-bottom:1px solid #536247;color:#26371e}
+.resume-contact .resume-download:hover{color:#52663a}
+@media(max-width:1100px){.has-timeline .job-list{padding-left:80px}.journey-entry::before{left:-39px}.journey-entry:not(:last-child)::after{left:-35px}.journey-year{left:-80px}.contact-links .back-top{margin-left:0}}
+@media(max-width:700px){.has-timeline .job-list{padding-left:26px}.journey-entry::before{left:-26px;width:7px;height:7px;top:32px}.journey-entry:not(:last-child)::after{left:-23px;top:35px;bottom:-35px}.journey-year{display:none}.about-links{gap:15px 20px}.contact-links .resume-download-contact{font-size:20px}}

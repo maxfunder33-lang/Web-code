@@ -55,3 +55,10 @@ npm run build:pm
 
 页面使用的姓名、邮箱、电话、微信二维码和个人相册会随网站源码资源一同提供，均为当前作品集的展示内容。
 
+
+## 最新界面与简历下载
+
+首屏试用 React Bits MoltenMetal 流动金属背景，共用暂停、离屏暂停及手机渲染限制；保留 MicroSlats 源文件以便后续切换。
+
+工作与教育经历采用纵向时间线，年份为 2024、2022、2018，节点随经历展开与收起保持对齐。个人介绍与联系区各提供一个“下载简历 PDF”入口：运营版下载 `public/assets/resumes/yuezihao-operations.pdf`，产品版下载 `public/assets/resumes/yuezihao-product-manager.pdf`。PDF 已根据网站及最新确认的业务事实重写，均为浅色底两页简历，按运营与产品方向分别组织；后续替换对应 PDF 时保持文件路径不变。
+
